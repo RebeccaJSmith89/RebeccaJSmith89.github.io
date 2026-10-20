@@ -129,7 +129,49 @@
       padding: 28px;
       box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
     }
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
 
+.research-card,
+a.research-card {
+  display: block;
+  background-color: #f7fbf7;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  text-decoration: none;
+  color: var(--text);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #d6e3d8;
+}
+
+a.research-card:hover,
+.research-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.research-card h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: var(--forest);
+  font-size: 1.35rem;
+}
+
+.research-card p {
+  margin-bottom: 18px;
+  font-size: 1rem;
+}
+
+.research-link {
+  font-weight: bold;
+  color: var(--forest-light);
+  font-size: 0.95rem;
+}
     footer {
       text-align: center;
       padding: 30px 20px;
@@ -182,18 +224,30 @@
 
   <main>
     <section id="research">
-      <h2>Research</h2>
-      <div class="card">
-        <p>
-          My research focuses on population genomics, conservation genetics, and
-          evolutionary biology. I’m especially interested in using genomic data to understand population structure, how environmental factors influence organismal fitness, and the evolutionary forces shaping genetic variation
-        </p>
-        <p>
-          My work has included freshwater fish systems such as Brook Trout, and I’m
-          now expanding into marine genomics through postdoctoral research on sea scallops.
-        </p>
-      </div>
-    </section>
+  <h2>Research</h2>
+
+  <div class="research-grid">
+    <div class="research-card">
+      <h3>Brook Trout</h3>
+      <p>
+        My dissertation research used population genetics and genomics to evaluate the outcomes of mixed-source restorations of native Brook Trout in Great Smoky Mountains National Park and investigate the evolutionary history of fragmented and isolated populations.
+      </p>
+      <div class="research-link">Project page coming soon</div>
+    </div>
+
+    <a class="research-card"
+       href="https://gurr-lab.com/projects/Blog%20Post%20Title%20One-3zaa9-zlxng-67tfc-8fy7w"
+       target="_blank" rel="noopener noreferrer">
+      <h3>Atlantic Sea Scallops</h3>
+      <p>
+        Exploring population structure, genomic variation, and environmental
+        responses in Atlantic sea scallops through postdoctoral research in the
+        Gurr Lab.
+      </p>
+      <div class="research-link">Explore the project ↗</div>
+    </a>
+  </div>
+</section>
 
     <section id="contact">
       <h2>Contact</h2>
