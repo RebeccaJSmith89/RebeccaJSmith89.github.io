@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rebecca Smith, Ph.D. | Population Genomics & Applied Conservation</title>
+  <style>
+    :root {
+      --forest: #1f3d2f;
+      --forest-dark: #173126;
+      --forest-light: #355e4b;
+      --cream: #f6f3ea;
+      --sage: #dbe6dc;
+      --text: #243328;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: var(--cream);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--forest);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      background-color: var(--forest);
+      color: var(--white);
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .site-title {
+      font-size: 1.15rem;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
+
+    nav a {
+      color: var(--white);
+      margin-left: 16px;
+      font-size: 0.95rem;
+      letter-spacing: 0.5px;
+    }
+
+    .hero {
+      background:
+        linear-gradient(rgba(20, 45, 32, 0.72), rgba(20, 45, 32, 0.72)),
+        linear-gradient(135deg, #355e4b, #6a8f70);
+      color: var(--white);
+      padding: 110px 8% 100px;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .hero-subtitle {
+      font-size: 0.95rem;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: #e3efe4;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: 3.4rem;
+      margin: 0 0 18px 0;
+      line-height: 1.1;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      max-width: 760px;
+      margin-bottom: 24px;
+    }
+
+    .hero-tags {
+      background-color: rgba(255, 255, 255, 0.12);
+      display: inline-block;
+      padding: 14px 18px;
+      border-radius: 12px;
+      font-size: 1rem;
+      margin-bottom: 22px;
+    }
+
+    .hero-role {
+      font-size: 1rem;
+      color: #eef6ef;
+    }
+
+    main {
+      max-width: 950px;
+      margin: 0 auto;
+      padding: 70px 8%;
+    }
+
+    section {
+      margin-bottom: 70px;
+    }
+
+    h2 {
+      color: var(--forest);
+      font-size: 2rem;
+      margin-bottom: 18px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 14px;
+      padding: 28px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: var(--forest);
+      color: var(--white);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 700px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      nav a {
+        margin-left: 10px;
+        font-size: 0.9rem;
+      }
+
+      .hero {
+        padding: 90px 8% 80px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="site-title">REBECCA SMITH, Ph.D.</div>
+    <nav>
+      <a href="#about">ABOUT</a>
+      <a href="#research">RESEARCH</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="about">
+    <div class="hero-content">
+      <div class="hero-subtitle">Population Genomics | Applied Conservation</div>
+      <h1>Hi, I'm Rebecca! 👋</h1>
+      <p>
+        I'm a conservation geneticist fascinated by the stories hidden in DNA.
+        From trout streams to sea scallops, I use population genetics and
+        genomics to understand biodiversity and inform conservation and management.
+      </p>
+
+      <div class="hero-tags">
+        🧬 Population Genomics &nbsp;&nbsp; 🐟 Conservation Genetics &nbsp;&nbsp; 🏔️ Montana
+      </div>
+
+      <div class="hero-role">
+        <strong>Postdoctoral Scholar</strong><br>
+        Oregon State University / University of Washington
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section id="research">
+      <h2>Research</h2>
+      <div class="card">
+        <p>
+          My research focuses on population genomics, conservation genetics, and
+          evolutionary biology. I’m especially interested in how genomic data can
+          help us understand population structure, biodiversity, and the effects
+          of conservation and restoration efforts.
+        </p>
+        <p>
+          My work has included freshwater fish systems such as Brook Trout, and I’m
+          now expanding into marine genomics through postdoctoral research on sea scallops.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>
+          You can connect with me through
+          <a href="https://github.com/RebeccaJSmith89" target="_blank">GitHub</a>
+          and add additional links here later, such as Google Scholar, email, or CV.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Made with curiosity, conservation, and a little DNA 🧬
+  </footer>
+
+</body>
+</html>
